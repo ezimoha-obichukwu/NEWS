@@ -4,4 +4,8 @@ from .models import News
 
 class Newsserializer(serializers.ModelSerializer):
     class Meta:
-        model
+        model = News
+        fields = ["title", "content", "reporter", "slug"]
+        # fields = "__all__"
+
+        
